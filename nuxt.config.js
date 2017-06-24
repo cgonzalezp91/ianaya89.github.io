@@ -1,7 +1,4 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
   head: {
     title: 'starter',
     meta: [
@@ -13,17 +10,12 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Customize the progress-bar color
-  */
+
+  router: { base: '/ianaya89.github.io/' },
+  
   loading: { color: '#3B8070' },
-  /*
-  ** Build configuration
-  */
+  
   build: {
-    /*
-    ** Run ESLINT on save
-    */
     extend (config, ctx) {
       if (ctx.isClient) {
         config.module.rules.push({
