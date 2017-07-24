@@ -1,53 +1,103 @@
 <template>
-  <div>
+  <main>
+    <header class="logo">
+      <nuxt-link to="/">ianaya89</nuxt-link>
+      <nuxt-link to="/about">about me</nuxt-link>
+      <nuxt-link to="/projects">projects</nuxt-link>
+      <nuxt-link to="/articles">articles</nuxt-link>
+      <nuxt-link to="/talks">talks</nuxt-link>
+    </header>
+
     <nuxt/>
-  </div>
+
+    <footer>
+      <nav>
+        <span>Copyright &copy; 2017</span>
+        <a target="_blank" href="https://twitter.com/ianaya89"><i class="fa fa-twitter fa-lg"></i></a>
+        <a target="_blank" href="https://github.com/ianaya89"><i class="fa fa-github fa-lg"></i></a>
+        <a target="_blank" href="https://linkedin.com/in/ianaya89"><i class="fa fa-linkedin fa-lg"></i></a>
+        <a target="_blank" href="mailto:ignacio.anaya89@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>
+      </nav>
+    </footer>
+  </main>
 </template>
 
+
 <style>
-html
-{
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+.home {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: -1;
+  height: 50vh;
+  width: 50%;
+  margin: auto;
 }
-*, *:before, *:after
-{
-  box-sizing: border-box;
+
+.progress {
+  height: 5px !important;
+}
+
+main {
+  -webkit-flex: none;
+  -moz-flex: none;
+  flex: none;
+  padding: 25px 50px;
+}
+
+header {
+  height: 100px;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  padding: 10px;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+}
+
+nav { margin-top: 20px; }
+
+a {
+  display: inline-block;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+
+body {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   margin: 0;
+  box-sizing: border-box;
+  background: #3b3b3b;
+  color: #f3f3f3;
 }
-.button--green
-{
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+
+a {
+  color: steelblue;
 }
-.button--green:hover
-{
+
+a:hover {
   color: #fff;
-  background-color: #3b8070;
-}
-.button--grey
-{
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  background: steelblue;
   text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
 }
-.button--grey:hover
-{
-  color: #fff;
-  background-color: #35495e;
+
+a { text-decoration: none; }
+
+.nuxt-link-exact-active {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .main {padding: 25px 15px;}
+  .logo {padding-bottom: 20px;}
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
 <div class="home">
   <div class="">
-    <h1># Ignacio Anaya</h1>
+    <h1># Talks</h1>
     <p class="type">
-      > Full stack Developer, Programming Mentor & Speaker 🚀
+      > Comming Soon 🔜
     </p>
     <nav>
       <h3>
