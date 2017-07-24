@@ -14,8 +14,6 @@ module.exports = {
     ]
   },
 
-  router: { base: '/ianaya89.github.io/' },
-
   loading: { color: 'steelblue' },
 
   build: {
