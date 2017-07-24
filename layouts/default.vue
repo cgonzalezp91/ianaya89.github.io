@@ -88,6 +88,11 @@ a:hover {
   text-decoration: none;
 }
 
+footer a:hover {
+  background: none;
+  color: #fff;
+}
+
 a { text-decoration: none; }
 
 .nuxt-link-exact-active {
@@ -111,7 +116,7 @@ a { text-decoration: none; }
   }
 
   footer {
-     padding-top: 0;
+    padding-top: 0;
     border-top: 1px solid #fff;
   }
 
