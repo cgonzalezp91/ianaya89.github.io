@@ -3,7 +3,7 @@
   <div>
     <h1># Who I am ? </h1>
     <p>
-      > I am Full Stack developer, Programming Mentor and Newbie Speaker. Right now I am mostly working with with JavaScript, Vue.js and Node.js
+      > I am Full Stack developer, Programming Mentor and Speaker. Right now I am mostly working with with JavaScript, Vue.js and Node.js
     </p>
     <p>
       > Recently I joined the <a style="margin: 0" target="_blank" href="https://auth0.com/ambassador-program">Auth0 Ambassadors Team</a>, with the goal to improve the way I contribute to OSS.
