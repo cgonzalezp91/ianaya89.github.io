@@ -97,7 +97,27 @@ a { text-decoration: none; }
 }
 
 @media (max-width: 500px) {
-  .main {padding: 25px 15px;}
-  .logo {padding-bottom: 20px;}
+  .home {
+    width: 100%;
+    overflow: auto;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  header {
+    height: auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+  }
+
+  footer {
+     padding-top: 0;
+    border-top: 1px solid #fff;
+  }
+
+  header a {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 </style>
