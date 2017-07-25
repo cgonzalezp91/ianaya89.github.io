@@ -11,7 +11,7 @@
     <p>
       > My passions are code, teach and field hockey. I also love to be involved in OSS projets and participate in dev communities.
     </p>
-    <p>> Do you have something interested to talk about?</p>
+    <p>> Do you have something interesting to talk about?</p>
     <nav>
       <h3>
         <a target="_blank" href="http://twitter.com/ianaya89">Lets' have a chat!</a>
