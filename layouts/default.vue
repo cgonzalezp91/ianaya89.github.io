@@ -1,26 +1,19 @@
 <template>
   <main>
-    <header class="logo">
-      <nuxt-link to="/">ianaya89</nuxt-link>
-      <nuxt-link to="/about">about me</nuxt-link>
-      <nuxt-link to="/projects">projects</nuxt-link>
-      <nuxt-link to="/articles">articles</nuxt-link>
-      <nuxt-link to="/talks">talks</nuxt-link>
-    </header>
-
+    <ia-header></ia-header>
     <nuxt/>
-
-    <footer>
-      <nav>
-        <span>Copyright &copy; 2017</span>
-        <a target="_blank" href="https://twitter.com/ianaya89"><i class="fa fa-twitter fa-lg"></i></a>
-        <a target="_blank" href="https://github.com/ianaya89"><i class="fa fa-github fa-lg"></i></a>
-        <a target="_blank" href="https://linkedin.com/in/ianaya89"><i class="fa fa-linkedin fa-lg"></i></a>
-        <a target="_blank" href="mailto:ignacio.anaya89@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>
-      </nav>
-    </footer>
+    <ia-footer></ia-footer>
   </main>
 </template>
+
+<script>
+import IaHeader from '~/components/Header'
+import IaFooter from '~/components/Footer'
+
+export default {
+  components: { IaHeader, IaFooter }
+}
+</script>
 
 
 <style>
@@ -69,7 +62,6 @@ a {
   text-decoration: none;
 }
 
-
 body {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   margin: 0;
@@ -93,36 +85,24 @@ footer a:hover {
   color: #fff;
 }
 
-a { text-decoration: none; }
-
-.nuxt-link-exact-active {
-  padding-bottom: 2px;
-  border-bottom: 1px solid #fff;
-  text-decoration: none;
+ul {
+  list-style: none;
 }
 
-@media (max-width: 500px) {
+ul li::before {
+  content: "> "
+}
+
+a { text-decoration: none; }
+
+@media (max-width: 700px) {
   .home {
     width: 100%;
     overflow: auto;
     height: auto;
+    display: flex;
+    justify-content: center;
     margin-bottom: 50px;
-  }
-
-  header {
-    height: auto;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #fff;
-  }
-
-  footer {
-    padding-top: 0;
-    border-top: 1px solid #fff;
-  }
-
-  header a {
-    margin-left: 5px;
-    margin-right: 5px;
   }
 }
 </style>
